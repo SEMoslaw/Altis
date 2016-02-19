@@ -11,47 +11,59 @@ class Life_impound_menu_action
 		{
 			colorBackground[] = {0,0,0,0.7};
 			idc = -1;
-			x = 0.402031 * safezoneW + safezoneX;
-			y = 0.412 * safezoneH + safezoneY;
-			w = 0.201094 * safezoneW;
-			h = 0.154 * safezoneH;
+			x = 0.302344 * safezoneW + safezoneX;
+			y = 0.348259 * safezoneH + safezoneY;
+			w = 0.395312 * safezoneW;
+			h = 0.283883 * safezoneH;
 		};
 
-		class StoreCar : Life_RscButtonMenu
+		class StoreCar: Life_RscButtonMenu
 		{
 			idc = -1;
 			text = "$STR_Vehicle_Store";
-			onButtonClick = "[1] call life_fnc_storeVehicleAction;";
-			x = 0.402031 * safezoneW + safezoneX;
-			y = 0.533 * safezoneH + safezoneY;
-			w = 0.061875 * safezoneW;
-			h = 0.033 * safezoneH;
+			onButtonClick = "[1] call life_fnc_storeVehicleAction;closeDialog 0;";
+			x = 0.309219 * safezoneW + safezoneX;
+			y = 0.581372 * safezoneH + safezoneY;
+			w = 0.118594 * safezoneW;
+			h = 0.04 * safezoneH;
 		};
 
-		class CleanCar : life_RscButtonMenu
+		class CloseButton: life_RscButtonMenu
+		{
+			idc = -1;
+			text = "$STR_Global_Close";
+			colorBackground[] = {0.65,0.01,0,1};
+			onButtonClick = "closeDialog 0;";
+			x = 0.572187 * safezoneW + safezoneX;
+			y = 0.581372 * safezoneH + safezoneY;
+			w = 0.118594 * safezoneW;
+			h = 0.04 * safezoneH;
+		};
+
+		class CleanCar: life_RscButtonMenu
 		{
 			idc = -1;
 			text = "$STR_Vehicle_Clean";
-			onButtonClick = "[2] call life_fnc_storeVehicleAction;";
-			x = 0.54125 * safezoneW + safezoneX;
-			y = 0.533 * safezoneH + safezoneY;
-			w = 0.061875 * safezoneW;
-			h = 0.033 * safezoneH;
+			onButtonClick = "[2] call life_fnc_storeVehicleAction;closeDialog 0;";
+			x = 0.440991 * safezoneW + safezoneX;
+			y = 0.581372 * safezoneH + safezoneY;
+			w = 0.118594 * safezoneW;
+			h = 0.04 * safezoneH;
 		};
 	};
 
 	class controls
 	{
-
-		class TextMessage : Life_RscStructuredText
+		class TextMessage: Life_RscStructuredText
 		{
 			idc = 4302;
 			text = "$STR_Vehicle_StoreMSG";
-			sizeEx = 0.045;
-			x = 0.402031 * safezoneW + safezoneX;
-			y = 0.412 * safezoneH + safezoneY;
-			w = 0.201094 * safezoneW;
-			h = 0.121 * safezoneH;
+			sizeEx = 0.040;
+			colorBackground[] = {0,0,0,1};
+			x = 0.309219 * safezoneW + safezoneX;
+			y = 0.359259 * safezoneH + safezoneY;
+			w = 0.381562 * safezoneW;
+			h = 0.213453 * safezoneH;
 		};
 	};
 };
