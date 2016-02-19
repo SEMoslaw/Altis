@@ -11,20 +11,10 @@ class Life_impound_menu_action
 		{
 			colorBackground[] = {0,0,0,0.7};
 			idc = -1;
-			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.402187 * safezoneW;
-			h = 0.495 * safezoneH;
-		};
-
-		class Title: Life_RscTitle
-		{
-			idc = -1;
-			text = "$STR_GUI_Store_Confirmation";
-			x = 0.309219 * safezoneW + safezoneX;
-			y = 0.247 * safezoneH + safezoneY;
-			w = 0.180469 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 0.302344 * safezoneW + safezoneX;
+			y = 0.348259 * safezoneH + safezoneY;
+			w = 0.395312 * safezoneW;
+			h = 0.283883 * safezoneH;
 		};
 
 		class StoreCar: Life_RscButtonMenu
@@ -33,20 +23,21 @@ class Life_impound_menu_action
 			text = "$STR_Vehicle_Store";
 			onButtonClick = "[1] call life_fnc_storeVehicleAction;closeDialog 0;";
 			x = 0.309219 * safezoneW + safezoneX;
-			y = 0.654 * safezoneH + safezoneY;
+			y = 0.581372 * safezoneH + safezoneY;
 			w = 0.118594 * safezoneW;
-			h = 0.055 * safezoneH;
+			h = 0.04 * safezoneH;
 		};
 
 		class CloseButton: life_RscButtonMenu
 		{
 			idc = -1;
 			text = "$STR_Global_Close";
+			colorBackground[] = {0.65,0.01,0,1};
 			onButtonClick = "closeDialog 0;";
 			x = 0.572187 * safezoneW + safezoneX;
-			y = 0.236 * safezoneH + safezoneY;
+			y = 0.581372 * safezoneH + safezoneY;
 			w = 0.118594 * safezoneW;
-			h = 0.044 * safezoneH;
+			h = 0.04 * safezoneH;
 		};
 
 		class CleanCar: life_RscButtonMenu
@@ -54,10 +45,10 @@ class Life_impound_menu_action
 			idc = -1;
 			text = "$STR_Vehicle_Clean";
 			onButtonClick = "[2] call life_fnc_storeVehicleAction;closeDialog 0;";
-			x = 0.577344 * safezoneW + safezoneX;
-			y = 0.654 * safezoneH + safezoneY;
-			w = 0.113437 * safezoneW;
-			h = 0.055 * safezoneH;
+			x = 0.440991 * safezoneW + safezoneX;
+			y = 0.581372 * safezoneH + safezoneY;
+			w = 0.118594 * safezoneW;
+			h = 0.04 * safezoneH;
 		};
 	};
 
@@ -70,9 +61,9 @@ class Life_impound_menu_action
 			sizeEx = 0.040;
 			colorBackground[] = {0,0,0,1};
 			x = 0.309219 * safezoneW + safezoneX;
-			y = 0.291 * safezoneH + safezoneY;
-			w = 0.381563 * safezoneW;
-			h = 0.352 * safezoneH;
+			y = 0.359259 * safezoneH + safezoneY;
+			w = 0.381562 * safezoneW;
+			h = 0.213453 * safezoneH;
 		};
 	};
 };
